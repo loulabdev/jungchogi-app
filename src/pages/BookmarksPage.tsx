@@ -23,7 +23,7 @@ const TYPE_META: Record<
 };
 
 /** 아이템 ID로 원문 링크를 계산 */
-function resolveLink(id: string): string {
+function resolveLink(id: string, type: string): string {
   // 개념·비교표·인포 → 과목 페이지 (앵커 포함)
   const conceptItem = CONCEPTS.find((c) => c.id === id);
   if (conceptItem) return `/subject/${conceptItem.subject}#${id}`;
