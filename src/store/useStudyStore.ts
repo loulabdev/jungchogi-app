@@ -53,4 +53,3 @@ export const useStudyStore = create<StudyState>()(
     { name: 'cert-study-storage' }
   )
 );
-
